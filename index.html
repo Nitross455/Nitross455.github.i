@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Majan Na</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #202020;
+            color: #ffffff; /* Color del texto */
+        }
+
+        /* Contenedor del logo y texto */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #303030; /* Fondo del header */
+        }
+
+        .logo img {
+            height: 50px; /* Ajusta el tamaño del logo */
+            margin-right: 20px; /* Espacio entre el logo y el texto */
+        }
+
+        .header-text {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Contenedor para el texto y la imagen */
+        .content-container {
+            display: flex;
+            flex: 1;
+            background-color: #202020; /* Fondo del contenedor */
+            padding: 20px;
+        }
+
+        /* Texto alineado a la izquierda */
+        .texto {
+            flex: 1;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .texto h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .texto p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Espacio para la imagen */
+        .imagen {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Para que la imagen no se salga del contenedor */
+        }
+
+        .imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen al contenedor */
+        }
+
+        /* Contenedor para futuras opciones */
+        .options-container {
+            padding: 20px;
+            background-color: #303030; /* Fondo del contenedor de opciones */
+            text-align: center;
+        }
+
+        .options-container h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Subcontenedores de opciones */
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px; /* Espacio entre subcontenedores */
+        }
+
+        .option:nth-child(odd) .option-text {
+            order: 1; /* Texto a la izquierda */
+            padding-right: 20px;
+        }
+
+        .option:nth-child(odd) .option-image {
+            order: 2; /* Imagen a la derecha */
+        }
+
+        .option:nth-child(even) .option-text {
+            order: 2; /* Texto a la derecha */
+            padding-left: 20px;
+        }
+
+        .option:nth-child(even) .option-image {
+            order: 1; /* Imagen a la izquierda */
+        }
+
+        .option-text {
+            flex: 1;
+        }
+
+        .option-text h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .option-text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .option-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .option-image img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Altura máxima de la imagen */
+            object-fit: cover;
+        }
+
+        /* Espacio adicional debajo del contenedor de opciones */
+        .additional-text {
+            padding: 20px;
+            background-color: #202020; /* Fondo del espacio adicional */
+            text-align: center;
+        }
+
+        .additional-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Contenedor para el video */
+        .video-container {
+            padding: 20px;
+            background-color: #303030; /* Fondo del contenedor del video */
+            text-align: center;
+        }
+
+        .video-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px; /* Ancho máximo del video */
+            height: 400px; /* Altura del video */
+            margin-bottom: 20px;
+        }
+        .video-container video {
+            width: 30%; /* Ocupa el 100% del ancho del contenedor */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin-bottom: 20px;
+        }
+        .video-container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo y texto en la parte superior izquierda -->
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header-text">
+            X-Majan Na
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Contenedor para el texto y la imagen -->
+        <div class="content-container">
+            <!-- Texto alineado a la izquierda -->
+            <div class="texto">
+                <h1>X-Majan Na</h1>
+                <p>
+                    Las rutas X-Majan Naaj ofrecen una experiencia turística auténtica, basada en las tradiciones y actividades locales de las comunidades de Yalcobá y Dzalbay. Disfruta de una amplia variedad de actividades culturales, ecológicas y de aventura, diseñadas para conectar a los visitantes con la riqueza natural y cultural de la región.
+                </p>
+            </div>
+
+            <!-- Espacio para la imagen -->
+            <div class="imagen">
+                <img src="MainImg.png" alt="Imagen principal">
+            </div>
+        </div>
+
+        <!-- Contenedor para futuras opciones -->
+        <div class="options-container">
+            <h2>Actividades</h2>
+
+            <!-- Subcontenedor 1 -->
+            <div class="option">
+                <div class="option-text">
+                    <h3>Cocina tradicional: </h3>
+                    <p>
+                        Disfruta de los sabores auténticos de la región con platillos preparados por las mujeres de la comunidad, siguiendo recetas ancestrales. Vive la experiencia de conocer los procesos y la elaboración de cada alimento, desde las tortillas hechas a mano hasta delicias como frijol colado, huevo, cochinita pibil, relleno negro y tortillas de chaya, entre otros. 
+                    </p>
+                </div>
+                <div class="option-image">
+                    <img src="Cocina.png" alt="Opción 1">
+                </div>
+            </div>
+
+            <!-- Subcontenedor 2 -->
+            <div class="option">
+                <div class="option-text">
+                    <h3>Visitas a las milpas: </h3>
+                    <p>
+                        Sumérgete en la experiencia de la milpa y descubre de primera mano todo el proceso, desde la siembra hasta la cosecha. Aprende sobre las labores tradicionales que se realizan en el campo y conéctate con la naturaleza mientras exploras la riqueza de la flora y fauna local.
+                    </p>
+                </div>
+                <div class="option-image">
+                    <img src="Milpa.png" alt="Opción 2">
+                </div>
+            </div>
+
+            <!-- Subcontenedor 3 -->
+            <div class="option">
+                <div class="option-text">
+                    <h3>Recorrido por las comunidades: </h3>
+                    <p>
+                        Explora y descubre la esencia de la vida local mientras recorres la comunidad. Conoce los tradicionales solares, la iglesia y las plantas medicinales utilizadas por sus habitantes. Además, tendrás la oportunidad de convivir con la gente, compartiendo sus historias y costumbres.
+                    </p>
+                </div>
+                <div class="option-image">
+                    <img src="Comunidad.png" alt="Opción 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Espacio adicional debajo del contenedor de opciones -->
+        <div class="additional-text">
+            <p>
+                Finaliza tu recorrido visitando el parque ecológico “secreto maya” que cuenta con un maravilloso y refrescante cenote, una alberca, restaurant, cabañas y zona de hamacas.
+        </div>
+
+        <!-- Contenedor para el video -->
+        <div class="video-container">
+            <h2>Conoce más sobre X-Majan Na</h2>
+            <video controls>
+                <source src="VideoMain.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <p>
+                Contacto: 985-808-8239 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
